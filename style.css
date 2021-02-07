@@ -24,11 +24,12 @@ Section:before
     align-items: center;
     justify-content: center;
     font-weight: 900;
-    margin-top: 20vh;
+    margin-top: 35vh;
+    margin-left: 30px;
 }
 header 
 {
-position: i;
+position: absolute;
 top: 0;
 left: 0;
 padding: 40px 100px;
@@ -37,6 +38,7 @@ justify-content: space-between;
 align-items: center;
 width: 100%;
 }
+
 .logo img{
     max-width: 100px;
 }
@@ -53,21 +55,106 @@ width: 100%;
 {
     position: relative;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
+    align-items: center;
+    
 }
-.conteudo .imgbox
+.conteudo .imgBox 
 {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
+
 }
-.conteudo .imgbox
+.conteudo .imgBox img
 {
     max-width:100%;
 }
-.conteudo .text
+.conteudo .texto
 {
-    max-width: 700px;
+    max-width: 800px;
     margin-top: 20px;
+}
+.conteudo .texto h2
+{
+   color: #fff;
+   font-size: 2.5em;
+   font-weight: 800;
+   text-transform: uppercase;
+}
+
+.conteudo .texto p
+{
+   color: #fff;
+}
+
+.conteudo .texto a
+{
+   display: inline-block;
+   padding: 10px 30px;
+   color: #111;
+   background: #fff;
+   text-transform: uppercase;
+   font-weight: 500;
+   text-decoration: none;
+   letter-spacing: 2px;
+   margin-bottom: 15px;
+}
+.social {
+    position: absolute;
+    bottom: 29px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: invert(1);
+}
+.social li {
+    list-style: none;
+}
+.social li a
+{
+    display: block;
+    transform: scale (0.7);
+}
+@media (max-width: 767px)
+{
+    header {
+        padding: 20px 40px;}
+    
+    section {
+        padding: 40px;}
+    
+    section:before {
+        content: 'ZOOM';
+        position: absolute; 
+        font: size 16vw;
+        margin-top: 22vh;
+        margin-left: -5px;}
+
+    .conteudo .texto {
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo .texto h2 {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 800;}
+    
+    .conteudo .texto a {
+        text-align: center;
+        width: 20%;
+        margin: auto;
+        font-size: 1em;
+        font-weight: 500;}    
+
+    .social {
+        position: relative;
+        bottom: 2px;
+        margin-left: 150px;
+    }
+
+               
 }
